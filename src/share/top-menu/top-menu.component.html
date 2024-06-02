@@ -1,0 +1,28 @@
+<nav class="flex justify-between items-center py-8 px-8">
+  <img src="assets/image/LogoEagles.png" class="invert" width="200" />
+  <ul class="hidden lg:flex lg:gap-7 lg:text-white lg:text-xl">
+    <li [routerLink]="['/about-us']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">About Us</li>
+    <li [routerLink]="['/bjj']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">BJJ</li>
+    <li [routerLink]="['/mma']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">MMA</li>
+    <li [routerLink]="['/kids']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">Kids</li>
+    <li [routerLink]="['/contacts']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">Contatti</li>
+  </ul>
+  <div class="lg:hidden text-white text-2xl hover:cursor-pointer">
+    <i class="fa-solid fa-bars" (click)="toggleMobileMenu()"></i>
+  </div>
+</nav>
+
+@if(enableMobileMenu()) {
+<div class="absolute top-0 left-0 w-full h-full bg-black/90 flex items-center justify-center z-50">
+  <i class="fa-solid fa-x absolute top-8 right-8 text-white text-3xl hover:cursor-pointer"
+    (click)="toggleMobileMenu()">
+  </i>
+  <ul class="text-white text-3xl text-center flex flex-col gap-4">
+    <li [routerLink]="['/about-us']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">About Us</li>
+    <li [routerLink]="['/bjj']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">BJJ</li>
+    <li [routerLink]="['/mma']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">MMA</li>
+    <li [routerLink]="['/kids']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">Kids</li>
+    <li [routerLink]="['/contacts']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">Contatti</li>
+  </ul>
+</div>
+}

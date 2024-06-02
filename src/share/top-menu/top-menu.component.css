@@ -1,0 +1,13 @@
+.selected {
+  @apply relative before:w-full before:h-1 before:rounded
+     before:bg-white before:absolute before:left-0 before:bottom-0;
+}
+
+.underline-animation:not(.selected) {
+  @apply underline-selected hover:before:scale-x-100 hover:before:origin-left;
+}
+
+.underline-selected {
+  @apply relative before:w-full before:h-1 before:rounded before:origin-right before:transition-transform before:duration-300 
+    before:scale-x-0 before:bg-white before:absolute before:left-0 before:bottom-0;
+}
