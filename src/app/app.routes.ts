@@ -2,6 +2,11 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
   {
+    path: 'home',
+    loadComponent: () =>
+      import('./feature/home/home.component').then((m) => m.HomeComponent),
+  },
+  {
     path: 'about-us',
     loadComponent: () =>
       import('./feature/about-us/about-us.component').then(
@@ -33,15 +38,13 @@ export const routes: Routes = [
 
   {
     path: '',
-    redirectTo: 'about-us',
+    redirectTo: 'home',
     pathMatch: 'full',
   },
   {
     path: '**',
     pathMatch: 'full',
     loadComponent: () =>
-      import('./feature/about-us/about-us.component').then(
-        (m) => m.AboutUsComponent
-      ),
+      import('./feature/home/home.component').then((m) => m.HomeComponent),
   },
 ];

@@ -1,12 +1,17 @@
-<nav class="flex justify-between items-center py-8 px-8">
-  <img src="assets/image/LogoEagles.png" class="invert" width="200" />
+<nav class="flex justify-between items-center py-8 px-8 bg-black sticky top-0 z-50">
+  <img src="assets/image/mmaEagles.png" class="invert" width="130" />
   <ul class="hidden lg:flex lg:gap-7 lg:text-white lg:text-xl">
+    <li [routerLink]="['/home']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">Home</li>
     <li [routerLink]="['/about-us']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">About Us</li>
     <li [routerLink]="['/bjj']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">BJJ</li>
     <li [routerLink]="['/mma']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">MMA</li>
     <li [routerLink]="['/kids']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">Kids</li>
     <li [routerLink]="['/contacts']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">Contatti</li>
   </ul>
+  <div class="hidden lg:flex lg:gap-7 lg:text-white lg:text-lg">
+    <i class="fa-brands fa-facebook-f hover:cursor-pointer"></i>
+    <i class="fa-brands fa-instagram hover:cursor-pointer"></i>
+  </div>
   <div class="lg:hidden text-white text-2xl hover:cursor-pointer">
     <i class="fa-solid fa-bars" (click)="toggleMobileMenu()"></i>
   </div>
@@ -18,11 +23,16 @@
     (click)="toggleMobileMenu()">
   </i>
   <ul class="text-white text-3xl text-center flex flex-col gap-4">
+    <li [routerLink]="['/home']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">Home</li>
     <li [routerLink]="['/about-us']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">About Us</li>
     <li [routerLink]="['/bjj']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">BJJ</li>
     <li [routerLink]="['/mma']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">MMA</li>
     <li [routerLink]="['/kids']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">Kids</li>
     <li [routerLink]="['/contacts']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">Contatti</li>
   </ul>
+  <div class="absolute bottom-0 left-0 w-full flex gap-4 justify-center mb-4 text-white text-2xl">
+    <i class="fa-brands fa-facebook-f hover:cursor-pointer"></i>
+    <i class="fa-brands fa-instagram hover:cursor-pointer"></i>
+  </div>
 </div>
 }
