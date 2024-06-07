@@ -1,4 +1,4 @@
-import { Component, Renderer2, inject, signal } from '@angular/core';
+import { Component, Renderer2, computed, inject, signal } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
@@ -12,6 +12,13 @@ export class TopMenuComponent {
   private renderer: Renderer2 = inject(Renderer2);
 
   enableMobileMenu = signal<boolean>(false);
+  cssScrollOffsetY = computed(() => {
+    if (this.enableMobileMenu()) {
+      return 'left: 0px; top: ' + window.scrollY + 'px;';
+    }
+
+    return 'left: 0px; top: 0px;';
+  });
 
   toggleMobileMenu(): void {
     this.enableMobileMenu.set(!this.enableMobileMenu());

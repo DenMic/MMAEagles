@@ -18,7 +18,9 @@
 </nav>
 
 @if(enableMobileMenu()) {
-<div class="absolute top-0 left-0 w-full h-full bg-black/90 flex items-center justify-center z-50">
+<div 
+  class="absolute w-full h-full bg-black/90 flex items-center justify-center z-50"
+  [style]="cssScrollOffsetY()">
   <i class="fa-solid fa-x absolute top-8 right-8 text-white text-3xl hover:cursor-pointer"
     (click)="toggleMobileMenu()">
   </i>

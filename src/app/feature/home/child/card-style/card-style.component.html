@@ -1,0 +1,7 @@
+<div class="relative inline-block overflow-hidden h-full hover:cursor-pointer" (click)="onClick.emit()">
+    <img [src]="image()" class="w-full h-full object-cover object-top" />
+    <div class="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-transparent 
+        hover:bg-black/40 duration-500 transition-all">
+        <p class="text-white uppercase font-extrabold text-6xl text-center">{{ text() }}</p>
+    </div>
+</div>

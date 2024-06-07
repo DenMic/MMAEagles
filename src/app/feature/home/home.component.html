@@ -3,31 +3,13 @@
     <!-- <h1 class="text-black uppercase font-extrabold text-6xl text-center">Fly like an <br />eagle</h1> -->
 </div>
 
-<div class="w-full py-4 grid lg:gap-0 gap-4 lg:grid-cols-3 grid-cols-2">
+<div class="w-full py-4 px-4 grid lg:px-0 lg:grid-cols-3 md:grid-cols-2 grid-cols-1">
 
-    <div class="relative inline-block overflow-hidden hover:cursor-pointer">
-        <img src="assets/image/CombattimentoMarco.jpg" class="w-full h-full object-cover object-top" />
-        <div class="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-transparent 
-            hover:bg-black/40 duration-500 transition-all">
-            <p class="text-white uppercase font-extrabold text-6xl text-center">MMA</p>
-        </div>
-    </div>
+    <card-style image="assets/image/CombattimentoMarco.jpg" text="MMA" (onClick)="cardStyleClick('mma')" />
 
-    <div class="relative overflow-hidden hover:cursor-pointer">
-        <img src="assets/image/BJJ.jpg" class="w-full h-full object-cover object-top" />
-        <div class="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-transparent 
-        hover:bg-black/40 duration-500 transition-all">
-            <p class="text-white uppercase font-extrabold text-6xl text-center">BJJ</p>
-        </div>
-    </div>
+    <card-style image="assets/image/BJJ.jpg" text="BJJ" (onClick)="cardStyleClick('bjj')" />
 
-    <div class="relative overflow-hidden hover:cursor-pointer">
-        <img src="assets/image/DaniKids.jpg" class="w-full h-full object-cover object-top" />
-        <div class="absolute top-0 left-0 w-full h-full flex justify-center items-center bg-transparent 
-        hover:bg-black/40 duration-500 transition-all">
-            <p class="text-white uppercase font-extrabold text-6xl text-center">KIDS</p>
-        </div>
-    </div>
+    <card-style image="assets/image/DaniKids.jpg" text="KIDS" (onClick)="cardStyleClick('kids')" />
 
 </div>
 
@@ -36,86 +18,36 @@
 
     <div class="w-full p-6 grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-6">
 
-        <div class="relative overflow-hidden">
-            <div class="overflow-hidden">
-                <img src="assets/image/MarcoManara.jpg" 
-                    class="w-full object-cover object-top 
-                    hover:scale-110 duration-500 transition-transform" />
-            </div>
-            <div class="w-full text-center text-white mt-2">
-                <p class="text-xl text-center">
-                    <span class="uppercase font-bold">Marco manara</span> 
-                    <br />
-                    <span class="">Cintura nera</span>
-                    <br />
-                    <span class="">Head Instructor</span>
-                </p>
-            </div>
-        </div>
+        <card-traner 
+            image="assets/image/MarcoManara.jpg" 
+            nome="Marco manara" 
+            cintura="Cintura nera" 
+            descrizione="Head Instructor" />
     
-        <div class="relative overflow-hidden">
-            <div class="overflow-hidden">
-                <img src="assets/image/MarcoManara.jpg" class="w-full object-cover object-top
-                hover:scale-110 duration-500 transition-transform" />
-            </div>
-            <div class="w-full text-center text-white mt-2">
-                <p class="text-xl text-center">
-                    <span class="uppercase font-bold">Denis Micheletti</span> 
-                    <br />
-                    <span class="">Cintura Marrone</span>
-                    <br />
-                    <span class="">Istruttore Adulti</span>
-                </p>
-            </div>
-        </div>
+        <card-traner 
+            image="assets/image/MarcoManara.jpg" 
+            nome="Denis Micheletti" 
+            cintura="Cintura Marrone" 
+            descrizione="Istruttore Adulti" />
     
-        <div class="relative overflow-hidden">
-            <div class="overflow-hidden">
-                <img src="assets/image/MarcoManara.jpg" class="w-full object-cover object-top
-                hover:scale-110 duration-500 transition-transform" />
-            </div>
-            <div class="w-full text-center text-white mt-2">
-                <p class="text-xl text-center">
-                    <span class="uppercase font-bold">Daniele Vianini</span> 
-                    <br />
-                    <span class="">Cintura Viola</span>
-                    <br />
-                    <span class="">Istruttore Bambini e Adulti</span>
-                </p>
-            </div>
-        </div>
+        <card-traner 
+            image="assets/image/MarcoManara.jpg" 
+            nome="Daniele Vianini" 
+            cintura="Cintura Viola" 
+            descrizione="Istruttore Bambini e Adulti" />
 
-        <div class="relative overflow-hidden">
-            <div class="overflow-hidden">
-                <img src="assets/image/MarcoManara.jpg" class="w-full object-cover object-top
-                hover:scale-110 duration-500 transition-transform" />
-            </div>
-            <div class="w-full text-center text-white mt-2">
-                <p class="text-xl text-center">
-                    <span class="uppercase font-bold">Stefano Renzi</span> 
-                    <br />
-                    <span class="">Cintura Viola</span>
-                    <br />
-                    <span class="">Istruttore Bambini e Adulti</span>
-                </p>
-            </div>
-        </div>
+        <card-traner 
+            image="assets/image/MarcoManara.jpg" 
+            nome="Stefano Renzi" 
+            cintura="Cintura Viola" 
+            descrizione="Istruttore Bambini e Adulti" />
 
-        <div class="relative overflow-hidden">
-            <div class="overflow-hidden">
-                <img src="assets/image/MarcoManara.jpg" class="w-full object-cover object-top
-                hover:scale-110 duration-500 transition-transform" />
-            </div>
-            <div class="w-full text-center text-white mt-2">
-                <p class="text-xl text-center">
-                    <span class="uppercase font-bold">Chiara Dallapè</span> 
-                    <br />
-                    <span class="">Cintura Viola</span>
-                    <br />
-                    <span class="">Istruttrice Adulti</span>
-                </p>
-            </div>
-        </div>
+        <card-traner 
+            image="assets/image/MarcoManara.jpg" 
+            nome="Chiara Dallapè" 
+            cintura="Cintura Viola" 
+            descrizione="Istruttore Bambini e Adulti" />
 
     </div>
+
 </div>
