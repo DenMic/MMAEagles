@@ -4,7 +4,7 @@ import { TitlePageComponent } from '../../../share/title-page/title-page.compone
 @Component({
   selector: 'app-contacts',
   standalone: true,
-  imports: [TitlePageComponent],
+  imports: [],
   templateUrl: './contacts.component.html',
   styleUrl: './contacts.component.css',
 })
