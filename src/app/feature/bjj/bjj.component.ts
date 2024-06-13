@@ -4,7 +4,7 @@ import { TitlePageComponent } from '../../../share/title-page/title-page.compone
 @Component({
   selector: 'app-bjj',
   standalone: true,
-  imports: [TitlePageComponent],
+  imports: [],
   templateUrl: './bjj.component.html',
   styleUrl: './bjj.component.css',
 })
