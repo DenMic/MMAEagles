@@ -35,6 +35,11 @@ export const routes: Routes = [
         (m) => m.ContactsComponent
       ),
   },
+  {
+    path: 'rules',
+    loadComponent: () =>
+      import('./feature/rules/rules.component').then((m) => m.RulesComponent),
+  },
 
   {
     path: '',
