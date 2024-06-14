@@ -58,3 +58,23 @@
 .underline-animation:not(.selected) {
   @apply underline-selected hover:before:scale-x-100 hover:before:origin-left;
 }
+
+table.tableOrari {
+  @apply w-full text-center;
+}
+
+table.tableOrari > thead {
+  @apply uppercase bg-gray-100/70;
+}
+
+table.tableOrari > thead > tr > th {
+  @apply px-6 py-3;
+}
+
+table.tableOrari > tbody > tr {
+  @apply bg-white/70 border-b;
+}
+
+table.tableOrari > tbody > tr > td {
+  @apply px-6 py-4;
+}

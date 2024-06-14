@@ -26,13 +26,13 @@
     (click)="toggleMobileMenu()">
   </i>
   <ul class="text-white text-3xl text-center flex flex-col gap-4">
-    <li [routerLink]="['/home']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">Home</li>
-    <li [routerLink]="['/about-us']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">About Us</li>
-    <li [routerLink]="['/bjj']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">BJJ</li>
-    <li [routerLink]="['/mma']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">MMA</li>
-    <li [routerLink]="['/kids']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">Kids</li>
-    <li [routerLink]="['/contacts']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">Contatti</li>
-    <li [routerLink]="['/rules']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">Regole</li>
+    <li (click)="toggleMobileMenu()" [routerLink]="['/home']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">Home</li>
+    <li (click)="toggleMobileMenu()" [routerLink]="['/about-us']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">About Us</li>
+    <li (click)="toggleMobileMenu()" [routerLink]="['/bjj']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">BJJ</li>
+    <li (click)="toggleMobileMenu()" [routerLink]="['/mma']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">MMA</li>
+    <li (click)="toggleMobileMenu()" [routerLink]="['/kids']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">Kids</li>
+    <li (click)="toggleMobileMenu()" [routerLink]="['/contacts']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">Contatti</li>
+    <li (click)="toggleMobileMenu()" [routerLink]="['/rules']" routerLinkActive="selected" class="hover:cursor-pointer underline-animation">Regole</li>
   </ul>
   <div class="absolute bottom-0 left-0 w-full flex gap-4 justify-center mb-4 text-white text-2xl">
     <i class="fa-brands fa-facebook-f hover:cursor-pointer"></i>
