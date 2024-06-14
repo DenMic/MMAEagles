@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { TitlePageComponent } from '../../../share/title-page/title-page.component';
 import { CardStyleComponent } from './child/card-style/card-style.component';
-import { Router, RouterLink } from '@angular/router';
+import { Router } from '@angular/router';
 import { CardTranerComponent } from './child/card-traner/card-traner.component';
 
 @Component({
