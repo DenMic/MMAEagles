@@ -19,7 +19,7 @@ jobs:
           node-version: 22.0.0
 
       - name: Install Angular global
-        run: npm install -g @angular/cli@18.0.0"
+        run: npm install -g @angular/cli@18.0.0
 
       - name: Install Dependencies
         run: npm install
